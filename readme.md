@@ -1,7 +1,7 @@
 form.cheats
 ===========
 
-Manage easily your forms style :)
+Manage easily your forms style and behaviors :)
 
 This browser module is under MIT License.
 
