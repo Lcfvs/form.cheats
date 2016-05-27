@@ -43,10 +43,12 @@ void function(global) {
       return next();
     }
 
+    // do something
     form.addEventListener('submit', function() {
       console.log('submitted');
     });
 
+    // jump to the next middleware
     next();
   });
 }(this);
