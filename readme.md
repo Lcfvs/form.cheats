@@ -31,13 +31,15 @@ In your HTML body end :
 Register a middleware
 ---------------------
 ```
-global['form.cheats'].use(function(form, next) {
-  form.addEventListener('submit', function() {
-    console.log('submitted');
+void function(global) {
+  global['form.cheats'].use(function(form, next) {
+    form.addEventListener('submit', function() {
+      console.log('submitted');
+    });
+    
+    next();
   });
-  
-  next();
-});
+}(this);
 ```
 
 Middlewares
