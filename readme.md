@@ -30,7 +30,7 @@ In your HTML body end :
 
 Register a middleware
 ---------------------
-```
+```JS
 void function(global) {
   global['form.cheats'].use(function(form, next) {
     // the middleware code
