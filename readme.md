@@ -32,19 +32,21 @@ Register a middleware
 ---------------------
 ```JS
 void function(global) {
+  'use strict';
+
   global['form.cheats'].use(function(form, next) {
     // the middleware code
-    
+
     // tests if the form matches a class name, to detect if it need to be treated
     if (!form.classList.contains('middlewareName')) {
       // if not, jump to the next middleware
       return next();
     }
-    
+
     form.addEventListener('submit', function() {
       console.log('submitted');
     });
-    
+
     next();
   });
 }(this);
