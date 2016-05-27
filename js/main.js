@@ -15,8 +15,8 @@ void function(global) {
         
         form = this;
         
-        if (form.classList.contains('cheats')) {
-            return
+        if (!form.classList.contains('cheats')) {
+            return true;
         }
         
         event.preventDefault();
