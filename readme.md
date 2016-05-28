@@ -28,6 +28,9 @@ In your HTML body end :
   <script src="./js/main.js"></script>
 ```
 
+And add a `cheats` class on your forms
+
+
 Register a middleware
 ---------------------
 ```JS
