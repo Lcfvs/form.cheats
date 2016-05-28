@@ -86,6 +86,10 @@ void function(global) {
                 return;
             }
             
+            if (!form.classList.contains('cheats')) {
+                return;
+            }
+            
             push(forms, form);
             next(form);
         };
