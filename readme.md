@@ -57,6 +57,17 @@ void function(global) {
 }(this);
 ```
 
+Listen a document
+-----------------
+
+```JS
+void function(global) {
+    'use strict';
+    
+    global['form.cheats'].observe(global.document);
+}(this);
+```
+
 Middlewares
 -----------
 [form.cheats.editable](https://github.com/Lcfvs/form.cheats.editable)
